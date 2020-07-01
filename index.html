@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Palmer Station LTER Penguins Data  • palmerpenguins</title>
+<title>palmerpenguins R data package • palmerpenguins</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -18,9 +18,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
-<meta property="og:title" content="Palmer Station LTER Penguins Data ">
-<meta property="og:description" content="Size measurements, clutch observations, and blood isotope ratios for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica. Data were collected and made available by Dr. Kristen Gorman and Palmer Station LTER (&lt;https://pal.lternet.edu/&gt;). ">
-<meta property="og:image" content="https://allisonhorst.github.io/palmerpenguins/logo.png">
+<meta property="og:title" content="palmerpenguins R data package">
+<meta property="og:description" content="Data for three penguin species observed in the Palmer Archipelago, Antarctica, collected by Dr. Kristen Gorman with Palmer Station LTER. A great intro dataset for data science teaching and learning, and a useful replacement for the iris dataset.">
+<meta property="og:image" content="https://allisonhorst.github.io/palmerpenguins/reference/figures/palmerpenguins.png">
+<meta property="og:image:alt" content="palmerpenguins data package in R">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@allison_horst">
+<meta name="twitter:site" content="@allison_horst">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -58,7 +62,7 @@
   </a>
 </li>
 <li>
-  <a href="articles/palmerpenguins.html">Get started</a>
+  <a href="articles/intro.html">Get started</a>
 </li>
 <li>
   <a href="reference/index.html">Reference</a>
@@ -70,20 +74,23 @@
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="articles/articles/art.html">Art for teaching with palmerpenguins</a>
+<li class="dropdown-header">Use palmerpenguins</li>
+    <li>
+      <a href="articles/examples.html">Examples using ggplot2</a>
     </li>
     <li>
-      <a href="articles/articles/download.html">Download the palmerpenguin data from LTER</a>
+      <a href="articles/pca.html">PCA example</a>
     </li>
     <li>
-      <a href="articles/articles/examples.html">Example graphs using the penguins data</a>
+      <a href="articles/user_contributions.html">Community examples</a>
+    </li>
+    <li class="divider">
+    <li class="dropdown-header">Extras</li>
+    <li>
+      <a href="articles/art.html">Art</a>
     </li>
     <li>
-      <a href="articles/articles/pca.html">PCA with penguins and recipes</a>
-    </li>
-    <li>
-      <a href="articles/articles/user_contributions.html">User-contributed examples</a>
+      <a href="articles/download.html">Download the data directly</a>
     </li>
   </ul>
 </li>
@@ -186,7 +193,7 @@ install.packages("palmerpenguins")
 <div id="examples" class="section level2">
 <h2 class="hasAnchor">
 <a href="#examples" class="anchor"></a>Examples</h2>
-<p>You can find these and more code examples for exploring palmerpenguins in <code>vignette("examples")</code>.</p>
+<p>You can find these and more code examples for exploring palmerpenguins in <code><a href="articles/examples.html">vignette("examples")</a></code>.</p>
 <p>Penguins are fun to summarize! For example:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit">
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw">tidyverse</span>)
@@ -215,7 +222,7 @@ install.packages("palmerpenguins")
 <div id="artwork" class="section level2">
 <h2 class="hasAnchor">
 <a href="#artwork" class="anchor"></a>Artwork</h2>
-<p>You can download palmerpenguins art (useful for teaching with the data) in <code>vignette("art")</code>. If you use this artwork, please cite with: “Artwork by @allison_horst”.</p>
+<p>You can download palmerpenguins art (useful for teaching with the data) in <code><a href="articles/art.html">vignette("art")</a></code>. If you use this artwork, please cite with: “Artwork by @allison_horst”.</p>
 <div id="meet-the-palmer-penguins" class="section level3">
 <h3 class="hasAnchor">
 <a href="#meet-the-palmer-penguins" class="anchor"></a>Meet the Palmer penguins</h3>
